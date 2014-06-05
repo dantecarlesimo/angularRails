@@ -14,6 +14,10 @@ class BooksController < ApplicationController
     respond_with @book
   end
 
+  def edit
+    respond_with @book
+  end
+
   def update
     respond_with @book.update(book_params)
   end
